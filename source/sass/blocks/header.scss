@@ -1,7 +1,7 @@
 .header {
   width: 100%;
-  height: 100px;
-  background-color: red;
+  height: 83px;
+  background-color: #2a2a34;
 }
 
 .header__wrap {
@@ -10,4 +10,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 0 5px red;
+}
+
+.header__logo-img {
+  width: 178px;
+  height: 25px;
+}
+
+.header__logo-text {
+  font-family: $logo-font-face;
+  font-size: $logo-font-size;
+  color: $logo-font-color;
+  margin: 0;
+  text-transform: uppercase;
 }
