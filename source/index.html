@@ -1,13 +1,18 @@
+<!-- Doctype HTML5 -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Задаем кодировку для страницы -->
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- SEO Задание тега Title -->
     <title>InsideTracker</title>
+    <!-- SEO Тег Description -->
     <meta name="description" content="Rule Library">
+    <!-- Задание тега Viewport для адаптивного отображения страницы -->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="preload" href="fonts/Proxima-Nova-Regular.woff" as="font">
-    <link rel="preload" href="fonts/TradeGothic.woff" as="font">
+    <link rel="preload" href="fonts/TradeGothic-BoldCondTwenty.woff" as="font">
     <link rel="preload" href="fonts/MyriadPro-Regular.woff" as="font">
     <link rel="preload" href="fonts/OpenSans.woff" as="font">
     <link rel="stylesheet" href="css/style.css">
@@ -25,6 +30,7 @@
     <header class="header">
       <div class="header__wrap">
 
+        <!-- SEO: For inner page using tag 'a' for 'header__logo' -->
         <div class="header__logo">
           <svg class="header__logo-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 585.94 82.41" width="178" height="25">
             <defs>
@@ -50,7 +56,7 @@
           <p class="header__logo-text">Rule library</p>
         </div>
 
-        <nav class="main-nav">
+        <nav class="main-nav" aria-label="Главное меню">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">Lorem 1</a>
@@ -68,14 +74,13 @@
               <a class="main-nav__link main-nav__link--btn" href="#">Lorem ipsum</a>
             </li>
           </ul>
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
         </nav>
-
+        <button class="main-nav__toggle" type="button" aria-label="Переключатель открыть/закрыть меню">
+          <span></span>
+        </button>
       </div>
     </header>
 
-<!--     <script src="js/scripts.min.js"></script> -->
+    <script src="js/scripts.js"></script>
   </body>
 </html>

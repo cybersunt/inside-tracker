@@ -6,8 +6,10 @@
 
 .header__wrap {
   @include wrap;
+  justify-content: space-between;
+  align-items: center;
   height: inherit;
-  padding-top: 18px;
+  padding-top: 19px;
   padding-bottom: 17px;
   box-shadow: 0 0 5px red;
 }

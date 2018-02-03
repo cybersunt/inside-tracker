@@ -137,7 +137,7 @@ gulp.task('serve', function() {
 gulp.task('watch', function() {
     gulp.watch('./source/**/*.html', gulp.series('markup'));
     gulp.watch('./source/sass/**/*.scss', gulp.series('styles'));
-    // gulp.watch('./source/js/**/*.js', gulp.series('scripts'));
+    gulp.watch('./source/js/**/*.js', gulp.series('scripts'));
     gulp.watch('./source/img/content/**/*.*', gulp.series('images:content'));
     gulp.watch('./source/img/decoration/**/*.*', gulp.series('images:decor'));
     // gulp.watch('./source/img/content/**/*.*', gulp.series('webp'));
@@ -151,7 +151,7 @@ gulp.task('default',
   'copy',
   // 'sprite',
   'markup',
-  // 'scripts',
+  'scripts',
   gulp.parallel(
     'styles',
     'images:decor',
