@@ -53,25 +53,28 @@
   line-height: $line-height;
 }
 
-@mixin btn ($width: 140, $height: 32px, $bg-color: #ffffff, $color: #37b7ec) {
-  display: block;
+@mixin btn {
   text-align: center;
-  border-radius: 3px;
-  width: $width;
-  height: $height;
-  background-color: $bg-color;
-  color: $color;
-  transform: scale(1);
-  transition: transform 0.3s ease-out;
+  border-radius: 17px;
+  padding: 5px 45px;
+  background-color: $btn-color;
 
-  &:hover,
+  &:hover {
+    text-decoration: none;
+    background-color: $btn-hover;
+  }
+
   &:focus {
-    transform: scale(1.1);
-    transition: transform 0.3s ease-out;
+    background-color: $white;
+    color: $btn-focus-txt;
+    box-shadow: $btn-focus-shadow;
+    outline: none;
   }
 
   &:active {
-    background-color: #37b7ec;
-    color: #ffffff;
+    text-shadow: none;
+    background-color: $btn-active;
+    color: $white;
+    box-shadow: none;
   }
 }
