@@ -1,7 +1,13 @@
 .header {
   width: 100%;
   height: 83px;
-  background-color: #2a2a34;
+  background-color: $bg-header-mob;
+
+  @media (min-width: $desktop) {
+    min-height: 70px;
+    height: auto;
+    background-color: $bg-menu-header;
+  }
 }
 
 .header__wrap {
@@ -15,11 +21,20 @@
   position: relative;
 }
 
+.header__logo {
+  width: auto;
+}
+
 .header__logo-img {
   display: block;
   width: 178px;
   height: 25px;
   margin-bottom: 6px;
+
+  @media (min-width: $desktop) {
+    width: 148px;
+    height: 21px;
+  }
 }
 
 .header__logo-text {
@@ -36,4 +51,9 @@
   padding-left: 12px;
   padding-right: 3px;
   border-top: 1px solid $logo-font-color;
+
+  @media (min-width: $desktop) {
+    width: 148px;
+    letter-spacing: 5.3px;
+  }
 }

@@ -1,21 +1,31 @@
 .main-nav {
   @include abs(375px, auto);
-  background-color: $bg-menu;
+  background-color: $bg-menu-header;
   left: 0;
   top: 83px;
 
-  @media screen and (min-width: $desktop) {
-    display: flex;
-  }
-
   &--open {
     display: block;
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-color: transparent;
+    width: 710px;
+    width: 707px;
+    top: auto;
+    position: relative;
   }
 }
 
 .main-nav__list {
   @include ul-rst;
-  width: inherit;
+
+  @media screen and (min-width: $desktop) {
+    height: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
 
 .main-nav__item {
@@ -26,13 +36,37 @@
     border: none;
   }
 
-  .main-nav__item--btn {
-    padding-top: 20px;
-    margin-bottom: 5px;
+  @media screen and (min-width: $desktop) {
+    min-height: 32px;
+    padding: 0;
+    border: 0;
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin-right: 46px;
+    margin-right: 55px;
 
     &:last-child {
-      padding-bottom: 20px;
-      margin-bottom: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+.main-nav__item--btn {
+  padding-top: 20px;
+  margin-bottom: 5px;
+
+  &:last-child {
+    padding-bottom: 20px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 0;
+    margin-left: auto;
+
+    &:last-child {
+      padding: 0;
     }
   }
 }
@@ -54,11 +88,16 @@
   }
 
   &--btn {
-  @include text(18px, 18px, $white);
-  @include btn;
-  width: inherit;
-  min-width: 204px;
-  min-height: 32px;
+    @include text(18px, 18px, $white);
+    @include btn;
+    width: inherit;
+    min-width: 204px;
+    min-height: 32px;
+
+    @media screen and (min-width: $desktop) {
+      width: 204px;
+      letter-spacing: -1.2px;
+    }
   }
 }
 

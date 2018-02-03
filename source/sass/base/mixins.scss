@@ -1,8 +1,6 @@
 @mixin wrap {
   height: inherit;
   min-width: 375px;
-  max-width: 959px;
-
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
@@ -13,6 +11,8 @@
   @media screen and (min-width: $desktop) {
     max-width: 960px;
     margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -56,7 +56,7 @@
 @mixin btn {
   text-align: center;
   border-radius: 17px;
-  padding: 5px 45px;
+  padding: 5px 41px;
   background-color: $btn-color;
 
   &:hover {
