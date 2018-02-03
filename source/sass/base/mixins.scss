@@ -1,6 +1,8 @@
 @mixin wrap {
   height: inherit;
-  width: 375px;
+  min-width: 375px;
+  max-width: 959px;
+
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
@@ -8,10 +10,10 @@
   flex-wrap: wrap;
   // align-items: center;
 
-  // @media screen and (min-width: $desktop) {
-  //   min-width: 960px;
-  //   margin: 0 auto;
-  // }
+  @media screen and (min-width: $desktop) {
+    max-width: 960px;
+    margin: 0 auto;
+  }
 }
 
 @mixin abs ($width, $height) {
@@ -31,7 +33,13 @@
   margin: 0 auto;
 }
 
-@mixin list-reset {
+@mixin ul-rst {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin ul-line {
   margin: 0;
   padding: 0;
   list-style: none;
