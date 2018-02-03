@@ -1,8 +1,10 @@
+ // nav toggle script for mobile version
 (function () {
-  // nav toggle script for mobile version
-  var navToggle = document.querySelector('.main-nav__toggle');
+   var navToggle = document.querySelector('.nav-toggle');
 
   navToggle.addEventListener('click', function () {
-    navToggle.classList.toggle('main-nav__toggle--open');
+    navToggle.classList.toggle('nav-toggle--open');
   })
 })();
+
+document.querySelector('.main-nav').classList.remove('main-nav--nojs');
