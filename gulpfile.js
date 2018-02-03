@@ -37,9 +37,9 @@ gulp.task('styles', function() {
 gulp.task('markup', function() {
   return gulp.src('./source/*.html')                             // какие файлы обрабатывать
     .pipe(gp.plumber())
-    .pipe(gp.posthtml([
-      include()                                                  // инлайнит спрайт
-    ]))
+    // .pipe(gp.posthtml([
+    //   include()                                                  // инлайнит спрайт
+    // ]))
     .pipe(fileinclude({                                          // обрабатываем gulp-file-include
       prefix: '@@',
       basepath: '@file'
@@ -137,11 +137,11 @@ gulp.task('serve', function() {
 gulp.task('watch', function() {
     gulp.watch('./source/**/*.html', gulp.series('markup'));
     gulp.watch('./source/sass/**/*.scss', gulp.series('styles'));
-    gulp.watch('./source/js/**/*.js', gulp.series('scripts'));
+    // gulp.watch('./source/js/**/*.js', gulp.series('scripts'));
     gulp.watch('./source/img/content/**/*.*', gulp.series('images:content'));
     gulp.watch('./source/img/decoration/**/*.*', gulp.series('images:decor'));
-    gulp.watch('./source/img/content/**/*.*', gulp.series('webp'));
-    gulp.watch('./source/img/sprite/**/*.*', gulp.series('sprite'));
+    // gulp.watch('./source/img/content/**/*.*', gulp.series('webp'));
+    // gulp.watch('./source/img/sprite/**/*.*', gulp.series('sprite'));
   });
 
 // ЗАДАЧА: Сборка всего
@@ -149,14 +149,14 @@ gulp.task('default',
   gulp.series(
   'clean',
   'copy',
-  'sprite',
+  // 'sprite',
   'markup',
-  'scripts',
+  // 'scripts',
   gulp.parallel(
     'styles',
     'images:decor',
     'images:content',
-    'webp',
+    // 'webp',
   ),
   gulp.parallel(
     'watch',
