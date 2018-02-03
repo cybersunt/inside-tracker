@@ -1,11 +1,12 @@
 @mixin wrap {
   height: inherit;
-  width: 320px;
+  width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  backround-color: red;
+  // align-items: center;
 
   // @media screen and (min-width: $desktop) {
   //   min-width: 960px;

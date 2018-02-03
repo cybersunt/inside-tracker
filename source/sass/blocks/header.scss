@@ -7,21 +7,30 @@
 .header__wrap {
   @include wrap;
   height: inherit;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding-top: 18px;
+  padding-bottom: 17px;
   box-shadow: 0 0 5px red;
 }
 
 .header__logo-img {
+  display: block;
   width: 178px;
   height: 25px;
+  margin-bottom: 6px;
 }
 
 .header__logo-text {
   font-family: $logo-font-face;
   font-size: $logo-font-size;
   color: $logo-font-color;
-  margin: 0;
   text-transform: uppercase;
+  letter-spacing: 6px;
+  width: 157px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 3px;
+  padding-top: 4px;
+  padding-left: 12px;
+  padding-right: 3px;
+  border-top: 1px solid $logo-font-color;
 }
