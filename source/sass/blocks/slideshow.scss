@@ -2,28 +2,46 @@
   width: 100%;
   margin: 0 auto;
   min-width: 375px;
-  height: 666px;
+  min-height: 666px;
   padding-top: 83px;
   background-color: $black;
   position: relative;
+
+  @media screen and (min-width: $desktop) {
+    width: 100%;
+    min-height: 599px;
+    padding-top: 70px;
+  }
 }
 
 .slideshow__wrap {
   @include wrap;
+  justify-content: center;
   padding: 0;
-  height: 585px;
+  min-height: 585px;
   position: relative;
   box-shadow: 0 0 5px white;
+
+  @media screen and (min-width: $desktop) {
+    min-height: 530px;
+  }
 }
 
 .slideshow__list {
   @include ul-rst;
+  width: inherit;
+  min-height: inherit;
+
+  @media screen and (min-width: $desktop) {
+    width: 100vw;
+  }
 }
 
 .slideshow__item {
-  widths: inehiret;
-  min-height: 585px;
+  width: inherit;
+  min-height: inherit;
   top: 0;
+  left: 0;
   background-position: top center;
   background-repeat: no-repeat;
   text-align: center;
@@ -31,22 +49,40 @@
   padding-bottom: 40px;
   display: none;
 
+  @media screen and (min-width: $desktop) {
+    background-size: cover;
+    padding-top: 162px;
+  }
+
   &--active {
     display: block;
   }
 
   &--slide-first {
+    // Thepicture will change
     background-image: url('../../img/decoration/slide-mobile-1.jpg');
+
+    @media screen and (min-width: $desktop) {
+      background-image: url('../../img/decoration/slide1.jpg');
+    }
   }
 
   &--slide-second {
     // Thepicture will change
     background-image: url('../../img/decoration/slide-mobile-1.jpg');
+
+    @media screen and (min-width: $desktop) {
+      background-image: url('../../img/decoration/slide2.jpg');
+    }
   }
 
   &--slide-third {
     // Thepicture will change
     background-image: url('../../img/decoration/slide-mobile-1.jpg');
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: url('../../img/decoration/slide3.jpg');
   }
 }
 
@@ -58,6 +94,14 @@
   margin-top: 0;
   margin-bottom: 25px;
 
+  @media screen and (min-width: $desktop) {
+    @include text(82px, 72px, $white);
+    letter-spacing: -5px;
+    padding: 0px 200px;
+    width: 960px;
+    margin: 0 auto 3px;
+  }
+
   span {
     color: $light-green;
   }
@@ -68,8 +112,14 @@
   padding: 0 23px;
   letter-spacing: 0.6px;
   margin-top: 0;
-  margin-bottom: 17px;
   margin-bottom: 20px;
+
+  @media screen and (min-width: $desktop) {
+    @include text(25px, 35px, $white);
+    padding: 0px 200px;
+    width: 960px;
+    margin: 0 auto 66px;
+  }
 }
 
 .slideshow__text-bold {
@@ -85,6 +135,13 @@
   span {
     color: $light-green;
   }
+
+  @media screen and (min-width: $desktop) {
+    line-height: 35px;
+    padding: 0px 200px;
+    width: 960px;
+    margin: 0 auto;
+  }
 }
 
 .slideshow__toggles {
@@ -94,6 +151,11 @@
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (min-width: $desktop) {
+    width: 45px;
+    bottom: 21px;
+  }
 }
 
 .slideshow__toggle {
@@ -104,10 +166,20 @@
   width: 6px;
   height: 6px;
 
+  @media screen and (min-width: $desktop) {
+    width: 8px;
+    height: 8px;
+  }
+
   &--checked {
     width: 8px;
     height: 8px;
     background-color: $light-green;
+
+    @media screen and (min-width: $desktop) {
+      width: 12px;
+      height: 12px;
+    }
   }
 }
 
