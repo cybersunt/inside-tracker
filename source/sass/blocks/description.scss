@@ -1,0 +1,97 @@
+.description {
+  // height: 774px;
+  color: $white;
+  background-color: $black;
+  background-image: url('../../img/decoration/bg-desc-mobile.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 100%;
+
+  @media screen and (min-width: $desktop) {
+    // height: 630px;
+    background-image: url('../../img/decoration/bg-desc-desktop.jpg');
+    background-size: cover;
+  }
+}
+
+.description__wrap {
+  @include wrap;
+  padding-top: 65px;
+  padding-bottom: 65px;
+
+  @media screen and (min-width: $desktop) {
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 75px;
+    padding-bottom: 51px;
+  }
+}
+
+.description__heading {
+  @include heading($white, $light-green);
+    margin-bottom: 26px;
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 42px;
+    }
+}
+
+.description__text {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 55px;
+  letter-spacing: 0.32px;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.01px;
+  }
+
+  &--intro {
+    margin-top: 0;
+    line-height: 19.5px;
+    letter-spacing: 0.15px;
+    margin-bottom: 26px;
+
+    @media screen and (min-width: $desktop) {
+      font-size: 25px;
+      line-height: 35px;
+      letter-spacing: 0.3px;
+      margin-bottom: 21px;
+    }
+  }
+
+  &--content {
+    @media screen and (min-width: $desktop) {
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 26px;
+    }
+  }
+
+  &--important {
+    color: $light-green;
+    margin-bottom: 37px;
+
+    @media screen and (min-width: $desktop) {
+      font-size: 20px;
+      line-height: 26px;
+      margin-bottom: 27px;
+    }
+  }
+
+  &--conclusion {
+    margin-bottom: 44px;
+
+    @media screen and (min-width: $desktop) {
+      font-size: 25px;
+      line-height: 26px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.description__btn {
+  @include btn;
+}

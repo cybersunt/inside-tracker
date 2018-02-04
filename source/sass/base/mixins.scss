@@ -1,11 +1,11 @@
 @mixin wrap {
   height: inherit;
-  min-width: 375px;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 
   @media screen and (min-width: $desktop) {
     max-width: 960px;
@@ -19,16 +19,6 @@
   width: $width;
   height: $height;
   position: absolute;
-}
-
-@mixin abs-center ($width, $height) {
-  width: $width;
-  height: $height;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: 9999;
-  margin: 0 auto;
 }
 
 @mixin ul-rst {
@@ -51,11 +41,49 @@
   line-height: $line-height;
 }
 
-@mixin btn {
+@mixin heading($font-color, $span-color) {
+  font-size: 50px;
+  line-height: 50px;
+  color: $font-color;
+  font-family: $heading;
   text-align: center;
-  border-radius: 17px;
-  padding: 5px 41px;
+  text-transform: uppercase;
+  margin-top: 0;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 52px;
+    line-height: 49px;
+    letter-spacing: -2px;
+
+    br {
+      display: none;
+    }
+  }
+
+  span {
+    color: $span-color;
+  }
+}
+
+@mixin btn {
+  color: $white;
+  text-align: center;
+  font-size: 19px;
+  line-height: 44px;
+  height: 44px;
+  width: 100%;
+  display: block;
+  border-radius: 4px;
   background-color: $light-green;
+
+  @media screen and (min-width: $desktop) {
+    border-radius: 17px;
+    width: 204px;
+    height: 32px;
+    padding: 7px;
+    font-size: 18px;
+    line-height: 18px;
+  }
 
   &:hover {
     text-decoration: none;

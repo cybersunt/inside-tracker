@@ -1,15 +1,14 @@
 .slideshow {
   width: 100%;
   margin: 0 auto;
-  min-width: 375px;
-  min-height: 586px;
+  min-height: 584px;
   padding-top: 83px;
   background-color: $black;
   position: relative;
 
   @media screen and (min-width: $desktop) {
     width: 100%;
-    min-height: 599px;
+    min-height: 530px;
     padding-top: 70px;
   }
 }
@@ -69,24 +68,21 @@
   }
 }
 
-.slideshow__slide-title {
-  @include text(50px, 50px, $white)
-  font-family: $slide-title-ff;
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 0;
+.slideshow__slide-heading {
+  @include heading($white, $light-green);
   margin-bottom: 25px;
 
   @media screen and (min-width: $desktop) {
-    @include text(82px, 72px, $white);
+    font-size: 82px;
+    line-height: 72px;
     letter-spacing: -5px;
     padding: 0px 200px;
     width: 960px;
     margin: 0 auto 3px;
-  }
 
-  span {
-    color: $light-green;
+    br {
+      display: block;
+    }
   }
 }
 
@@ -107,7 +103,7 @@
 
 .slideshow__text-bold {
   @include text(18px, 20px, $white);
-  font-family: $slide-title-ff;
+  font-family: $heading;
   text-transform: uppercase;
   font-weight: 100;
   margin-top: 0;
