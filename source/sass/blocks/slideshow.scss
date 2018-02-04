@@ -2,7 +2,7 @@
   width: 100%;
   margin: 0 auto;
   min-width: 375px;
-  min-height: 666px;
+  min-height: 586px;
   padding-top: 83px;
   background-color: $black;
   position: relative;
@@ -14,27 +14,10 @@
   }
 }
 
-.slideshow__wrap {
-  @include wrap;
-  justify-content: center;
-  padding: 0;
-  min-height: 585px;
-  position: relative;
-  box-shadow: 0 0 5px white;
-
-  @media screen and (min-width: $desktop) {
-    min-height: 530px;
-  }
-}
-
 .slideshow__list {
   @include ul-rst;
   width: inherit;
   min-height: inherit;
-
-  @media screen and (min-width: $desktop) {
-    width: 100vw;
-  }
 }
 
 .slideshow__item {
