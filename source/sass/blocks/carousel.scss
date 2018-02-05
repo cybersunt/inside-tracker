@@ -1,0 +1,57 @@
+.carousel {
+  @media screen and (min-width: $desktop) {
+    width: 940px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+}
+
+.carousel__slides {
+  @media screen and (min-width: $desktop) {
+    width: 9999px;
+  }
+}
+.carousel__slide {
+  display: none;
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+    width: 313px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &--active {
+    display: block;
+  }
+}
+
+.carousel__arrows {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 40px);
+  top: 334px;
+
+  @media screen and (min-width: $desktop) {
+    width: 100%;
+    top: 284px;
+  }
+}
+
+.carousel__arrow {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+
+  &--prev {
+    fill: #cdd6df;
+  }
+
+  &--next {
+    right: 0;
+    fill: $light-green;
+  }
+}
