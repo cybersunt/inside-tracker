@@ -4,7 +4,6 @@
   position: relative;
 
   @media screen and (min-width: $desktop) {
-    height: 830px;
     margin-bottom: 0;
     background-image: url('../../img/decoration/bg-form-top.png');
     background-position: top 0;
@@ -187,6 +186,7 @@
 
 .send-request__send {
   @include btn;
+  border: 0;
   height: 41px;
   margin: 0 auto;
   line-height: 36px;
@@ -194,4 +194,20 @@
   @media screen and (min-width: $desktop) {
     margin: inherit;
   }
+
+  &:disabled {
+    background-color: #f5f5f5;
+    color: $placeholder-hover;
+  }
 }
+
+
+
+
+
+
+
+
+
+
+

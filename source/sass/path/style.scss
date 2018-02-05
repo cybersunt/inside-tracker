@@ -10,3 +10,11 @@
 @import '../blocks/testmonial.scss';
 @import '../blocks/description.scss';
 @import '../blocks/send-request.scss';
+
+.carousel__slide {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}

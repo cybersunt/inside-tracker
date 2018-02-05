@@ -1,8 +1,149 @@
 .testmonial {
-  height: 895px;
+  width: 100%;
+  min-height: 895px;
   background-color: $white;
 
   @media screen and (min-width: $desktop) {
     height: 841px;
   }
 }
+
+.testmonial__wrap {
+  @include wrap;
+  width: inherit;
+  padding-top: 84px;
+  padding-bottom: 63px;
+  display: block;
+  position: relative;
+
+  // @media screen and (min-width: $desktop) {
+  //   padding-left: 10px;
+  //   padding-right: 10px;
+  //   padding-top: 86px;
+  //   padding-bottom: 158px;
+  // }
+}
+
+.testmonial__heading {
+  @include heading($dark-grey, $steelblue);
+  margin-bottom: 0;
+
+  @media screen and (min-width: $desktop) {
+    padding: 0 80px;
+    margin-bottom: 67px;
+  }
+}
+
+.testmonial__list {
+  @include ul-line;
+  width: inherit;
+  position: relative;
+  background-image: url('../../img/decoration/carousel-bg-mobile.png');
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.testmonial__item {
+  text-align: center;
+  padding-top: 48px;
+}
+
+.testmonial__frame {
+  margin: 0 auto 73px;
+  position: relative;
+  width: 206px;
+  height: 246px;
+}
+
+.testmonial__corner {
+  @include abs(22px, 22px);
+  border: 7px solid $testmonial-text;
+  border-right: none;
+  border-bottom: none;
+
+  &::before {
+    position: absolute;
+    content: '';
+    border: 5px solid transparent;
+    border-left: 5px solid $testmonial-text;
+    border-top: 5px solid $testmonial-text;
+    left: 0;
+  }
+
+  &--top-left {
+    top: -7px;
+    left: -7px;
+  }
+
+  &--top-right {
+    transform: rotate(90deg);
+    top: -7px;
+    right: -7px;
+  }
+
+  &--bottom-left {
+    transform: rotate(-90deg);
+    bottom: -7px;
+    left: -7px;
+  }
+
+  &--bottom-right {
+    transform: rotate(180deg);
+    bottom: -7px;
+    right: -7px;
+  }
+}
+
+.testmonial__photo {
+  display: inline-block;
+  border: 13px solid #fff;
+  border-bottom-width: 50px;
+}
+
+.testmonial__text {
+  @include text (19.14px, 27.67px, $testmonial-text);
+  letter-spacing: 0.1px;
+  padding: 0 15px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.testmonial__profession {
+  @include text (24px, 24px, $steelblue);
+  letter-spacing: 0.15px;
+  margin-bottom: 68px;
+
+  span {
+    display: block;
+  }
+}
+
+.testmonial__arrows {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 40px);
+
+  top: 334px;
+}
+
+.testmonial__arrow {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+
+  &--prev {
+    fill: #cdd6df;
+  }
+
+  &--next {
+    right: 0;
+    fill: $light-green;
+  }
+}
+
+.testmonial__btn {
+  @include btn;
+}
+
+
