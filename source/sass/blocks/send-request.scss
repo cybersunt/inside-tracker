@@ -1,29 +1,66 @@
 .send-request {
   background-color: $bg-form;
   margin-bottom: 134px;
+  position: relative;
 
   @media screen and (min-width: $desktop) {
+    height: 830px;
     margin-bottom: 0;
+    background-image: url('../../img/decoration/bg-form-top.png');
+    background-position: top 0;
+    background-repeat: no-repeat;
+
+
+    &::after{
+      @include abs(1360px, 313px);
+      content:'';
+      background-image: url('../../img/decoration/bg-form-bottom.png');
+      background-position-y: bottom;
+      background-repeat: no-repeat;
+      z-index: 0;
+      bottom: 0;
+    }
   }
 }
 
 .send-request__wrap {
   @include wrap;
   padding-top: 58px;
+  position: relative;
+
+  @media screen and (min-width: $desktop) {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 86px;
+    padding-bottom: 158px;
+  }
 }
 
 .send-request__heading {
   @include heading($dark-grey, $steelblue);
   margin-bottom: 32px;
+
+  @media screen and (min-width: $desktop) {
+    padding: 0 80px;
+    margin-bottom: 67px;
+  }
 }
 
 .send-request__form {
   width: 100%;
+  padding-bottom: 121px;
 
   @media screen and (min-width: $desktop) {
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    z-index: 2;
+
+    background-color: $white;
+    padding-top: 54px;
+    padding-bottom: 50px;
+    padding-right: 60px;
+    padding-left: 60px;
   }
 }
 
@@ -33,6 +70,12 @@
   letter-spacing: 0.2px;
   margin-top: 0;
   margin-bottom: 25px;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 72px;
+  }
 }
 
 .send-request__picture {
@@ -40,6 +83,14 @@
   width: 100%;
   max-width: 367px;
   margin: 0 auto 19px;
+
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    margin-bottom: 0;
+    width: 282px;
+    max-width: 282px;
+    left: 18px;
+  }
 }
 
 .send-request__label {
@@ -51,12 +102,30 @@
   &:last-of-type {
     margin-bottom: 60px;
   }
+
+  @media screen and (min-width: $desktop) {
+    width: 100%;
+    text-align: right;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 19px;
+
+    &:last-of-type {
+      margin-bottom: 38px;
+    }
+  }
 }
 
 .send-request__note {
   display: inline-flex;
   align-items: flex-start;
   margin-bottom: 18px;
+
+  @media screen and (min-width: $desktop) {
+    width: 115px;
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
 }
 
 .send-request__field {
@@ -67,11 +136,20 @@
   padding-right: 12px;
   border-radius: 3px;
   border: $field-border;
+
+  @media screen and (min-width: $desktop) {
+    width: 462px;
+  }
 }
 
 .send-request__field::placeholder {
   @include text (15px, 19px, $placeholder-color);
   font-family: $open-sans;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .send-request__field:hover {
@@ -112,4 +190,8 @@
   height: 41px;
   margin: 0 auto;
   line-height: 36px;
+
+  @media screen and (min-width: $desktop) {
+    margin: inherit;
+  }
 }
