@@ -1,28 +1,47 @@
 $mobile-only: 959px;
 $desktop: 960px;
 
-$white: #ffffff;
-$black: #000000;
+$proxima-nova: 'ProximaNova', 'Arial', sans-serif;
+$open-sans: 'Open Sans', 'Arial', sans-serif;
+$heading: 'TradeGothic', 'Arial', sans-serif;
+$base-ff: 'MyriadPro', 'Arial', sans-serif;
+
+$base-fs: 16.5px;
+$base-lh: 17.5px;
+
+$logo-font-size: 10.54px;
+$logo-font-color: #a8a8a8;
+$form-text-color: #46505a;
+$field-active: #6e6c6c;
+$field-border: 1px solid #a8b6c7;
+$filed-border-hover: rgb(168, 169, 171);
+$filed-focus-border: #e8e8e8;
+$filed-focus-shadow: 1px 1px 5px 1px #e8e8e8;
+$filed-disabled-bg: #f5f5f5;
+$placeholder-color: #b5c0cd;
+$placeholder-hover: #c3c3c3;
+
+
+$btn-focus-txt: #888888;
+$btn-focus-shadow: 1px 1px 67px 0.07px rgba(103, 173, 33, 0.5);
 
 $bg-header-mob: #2a2a34;
 $bg-menu-header: #3f4049;
 $bg-form: #f4f6f9;
 
-$logo-font-face: 'ProximaNova', 'Arial', sans-serif;
-$logo-font-size: 10.54px;
-$logo-font-color: #a8a8a8;
-
-$menu-font-face: 'Open Sans', 'Arial', sans-serif;
-$heading: 'TradeGothic', 'Arial', sans-serif;
-$base-ff: 'MyriadPro', 'Arial', sans-serif;
-$base-fs: 16.5px;
-$base-lh: 17.5px;
-
-$btn-focus-txt: #888888;
-$btn-focus-shadow: 1px 1px 67px 0.07px rgba(103, 173, 33, 0.5);
-
-$color-link-disabled: #fcfefd;
-
 $light-green: #64c800;
 $green: #67ad21;
 $dark-green: #497f12;
+$dark-grey: #3d3e46;
+$steelblue: #248aa8;
+
+// $color-link-disabled: // #fcfefd;
+
+$white: #ffffff;
+$black: #000000;
+
+
+
+
+
+

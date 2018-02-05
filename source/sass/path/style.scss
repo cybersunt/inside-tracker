@@ -9,23 +9,4 @@
 @import '../blocks/slideshow.scss';
 @import '../blocks/testmonial.scss';
 @import '../blocks/description.scss';
-
-.testmonial {
-  height: 895px;
-  background-color: $white;
-
-  @media screen and (min-width: $desktop) {
-    height: 841px;
-  }
-}
-
-.send-request {
-  height: 1106px;
-  background-color: $bg-form;
-  margin-bottom: 134px;
-
-  @media screen and (min-width: $desktop) {
-    height: 830px;
-    margin-bottom: 0;
-  }
-}
+@import '../blocks/send-request.scss';

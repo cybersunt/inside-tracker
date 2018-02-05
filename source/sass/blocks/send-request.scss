@@ -1,0 +1,104 @@
+.send-request {
+  background-color: $bg-form;
+  margin-bottom: 134px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
+  }
+}
+
+.send-request__wrap {
+  @include wrap;
+}
+
+.send-request__heading {
+  @include heading($dark-grey, $steelblue);
+}
+
+.send-request__form {
+
+  @media screen and (min-width: $desktop) {
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: center;
+  }
+}
+
+.send-request__form-text {
+  @include text(19px, 21.5px, $form-text-color);
+  text-align: center;
+}
+
+.send-request__picture {
+  display: block;
+  margin: 0 auto;
+}
+
+.send-request__label {
+  @include text(20px, 15px, $steelblue);
+  display: block;
+  font-family: $open-sans;
+
+  &:last-of-type {
+    margin-bottom: 60px;
+  }
+}
+
+.send-request__note {
+  display: inline-flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.send-request__field {
+  @include text (15px, 19px, $placeholder-color);
+  width: 100%;
+  height: 41px;
+  padding: 5px 15px;
+  border-radius: 3px;
+  border: $field-border;
+}
+
+.send-request__field::placeholder {
+  @include text (15px, 19px, $placeholder-color);
+  font-family: $open-sans;
+}
+
+.send-request__field:hover {
+  border-color: $filed-border-hover;
+}
+
+.send-request__field:focus {
+  outline: none;
+  box-shadow: $filed-focus-shadow;
+  border-color: $filed-focus-border;
+  color: $field-active
+}
+
+.send-request__field:hover::placeholder  {
+  color: $placeholder-hover;
+}
+
+
+.send-request__field:focus::placeholder {
+  color: $placeholder-hover;
+}
+
+.send-request__field:disabled {
+  background-color: $filed-disabled-bg;
+  border-color: $filed-focus-border;
+}
+
+.send-request__field:disabled::placholder {
+  color: $placeholder-hover;
+}
+
+.send-request__field[type=email]:disabled::placholder {
+  color: $field-active;
+}
+
+.send-request__send {
+  @include btn;
+  height: 41px;
+  margin: 0 auto;
+}

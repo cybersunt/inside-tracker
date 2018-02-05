@@ -74,7 +74,7 @@
 
 .main-nav__link {
   @include text(16px, 20px, $white);
-  font-family: $menu-font-face;
+  font-family: $open-sans;
   word-wrap: break-word;
   cursor: pointer;
   display: block;
