@@ -1,5 +1,4 @@
 .description {
-  // height: 774px;
   color: $white;
   background-color: $black;
   background-image: url('../../img/decoration/bg-desc-mobile.jpg');
@@ -8,7 +7,6 @@
   width: 100%;
 
   @media screen and (min-width: $desktop) {
-    // height: 630px;
     background-image: url('../../img/decoration/bg-desc-desktop.jpg');
     background-size: cover;
   }
