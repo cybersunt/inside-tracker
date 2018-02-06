@@ -54,16 +54,20 @@
   var countSlidesShow = 3;
   var position = 0;
 
-  if (document.documentElement.clientWidth > '960') {
-    prevSlide.addEventListener('click', function() {
-    position = Math.min(position + slideWidth * shiftSlide, 0);
-    slidesList.style.marginLeft = position + 'px';
+
+  prevSlide.addEventListener('click', function() {
+    if (document.documentElement.clientWidth > '960') {
+      position = Math.min(position + slideWidth * shiftSlide, 0);
+      slidesList.style.marginLeft = position + 'px';
+    }
   });
-    nextSlide.addEventListener('click', function() {
+
+  nextSlide.addEventListener('click', function() {
+    if (document.documentElement.clientWidth > '960') {
       position = Math.max(position - slideWidth, - slideWidth * (carouselSlides.length - countSlidesShow));
       slidesList.style.marginLeft = position + 'px';
-    });
-  }
+    }
+  });
 
   nextSlide.addEventListener('click', showNextSlide);
   prevSlide.addEventListener('click', showPrevSlide);

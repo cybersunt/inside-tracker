@@ -34,12 +34,6 @@
   @media screen and (min-width: $desktop) {
     background-size: cover;
     padding-top: 162px;
-
-    &::after {
-      background-image: url('../../img/decoration/slide1.jpg');
-      background-image: url('../../img/decoration/slide2.jpg');
-      background-image: url('../../img/decoration/slide3.jpg');
-    }
   }
 
   &--active {
