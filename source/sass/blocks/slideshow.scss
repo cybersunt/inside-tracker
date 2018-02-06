@@ -40,7 +40,7 @@
     display: block;
   }
 
-  &--slide-first {
+  &--slide1 {
     // Thepicture will change
     background-image: url('../../img/decoration/slide-mobile-1.jpg');
 
@@ -49,7 +49,7 @@
     }
   }
 
-  &--slide-second {
+  &--slide2 {
     // Thepicture will change
     background-image: url('../../img/decoration/slide-mobile-1.jpg');
 
@@ -58,13 +58,13 @@
     }
   }
 
-  &--slide-third {
+  &--slide3 {
     // Thepicture will change
     background-image: url('../../img/decoration/slide-mobile-1.jpg');
-  }
 
-  @media screen and (min-width: $desktop) {
-    background-image: url('../../img/decoration/slide3.jpg');
+    @media screen and (min-width: $desktop) {
+      background-image: url('../../img/decoration/slide3.jpg');
+    }
   }
 }
 
