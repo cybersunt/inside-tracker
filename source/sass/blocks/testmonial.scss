@@ -5,7 +5,7 @@
 
   @media screen and (min-width: $desktop) {
     min-height: 841px;
-    background-image: url('../../img/decoration/bg-testmonial.png');
+    background-image: url('../img/decoration/bg-testmonial.png');
     background-position: top 0;
     background-repeat: no-repeat;
 
@@ -35,7 +35,7 @@
   @include ul-line;
   width: inherit;
   position: relative;
-  background-image: url('../../img/decoration/carousel-bg-mobile.png');
+  background-image: url('../img/decoration/carousel-bg-mobile.png');
   background-position: top center;
   background-repeat: no-repeat;
 
@@ -71,14 +71,14 @@
     padding-top: 11px;
     width: 194px;
     height: 233px;
-    background-image: url('../../img/decoration/polaroid-frame.png');
+    background-image: url('../img/decoration/polaroid-frame.png');
     background-position: 2px 0;
     background-repeat: no-repeat;
 
     &::before {
       @include abs(70px, 36px);
       content: '';
-      background-image: url('../../img/decoration/sticker.png');
+      background-image: url('../img/decoration/sticker.png');
       background-position: 0 0;
       background-repeat: no-repeat;
       top: -18px;
@@ -89,7 +89,7 @@
    &::after{
       @include abs(158px, 18px);
       content: '';
-      background-image: url('../../img/decoration/polaroid-shadow.png');
+      background-image: url('../img/decoration/polaroid-shadow.png');
       background-position: 0 0;
       background-repeat: no-repeat;
       bottom: -16px;

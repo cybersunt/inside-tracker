@@ -1,13 +1,13 @@
 .description {
   color: $white;
   background-color: $black;
-  background-image: url('../../img/decoration/bg-desc-mobile.jpg');
+  background-image: url('../img/decoration/bg-desc-mobile.jpg');
   background-position: top center;
   background-repeat: no-repeat;
   width: 100%;
 
   @media screen and (min-width: $desktop) {
-    background-image: url('../../img/decoration/bg-desc-desktop.jpg');
+    background-image: url('../img/decoration/bg-desc-desktop.jpg');
     background-size: cover;
   }
 }

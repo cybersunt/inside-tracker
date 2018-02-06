@@ -42,28 +42,28 @@
 
   &--slide1 {
     // Thepicture will change
-    background-image: url('../../img/decoration/slide-mobile-1.jpg');
+    background-image: url('../img/decoration/slide-mobile-1.jpg');
 
     @media screen and (min-width: $desktop) {
-      background-image: url('../../img/decoration/slide1.jpg');
+      background-image: url('../img/decoration/slide1.jpg');
     }
   }
 
   &--slide2 {
     // Thepicture will change
-    background-image: url('../../img/decoration/slide-mobile-1.jpg');
+    background-image: url('../img/decoration/slide-mobile-1.jpg');
 
     @media screen and (min-width: $desktop) {
-      background-image: url('../../img/decoration/slide2.jpg');
+      background-image: url('../img/decoration/slide2.jpg');
     }
   }
 
   &--slide3 {
     // Thepicture will change
-    background-image: url('../../img/decoration/slide-mobile-1.jpg');
+    background-image: url('../img/decoration/slide-mobile-1.jpg');
 
     @media screen and (min-width: $desktop) {
-      background-image: url('../../img/decoration/slide3.jpg');
+      background-image: url('../img/decoration/slide3.jpg');
     }
   }
 }
