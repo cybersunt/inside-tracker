@@ -12,10 +12,9 @@
   }
 }
 .carousel__slide {
-  display: none;
+  display: block;
 
   @media screen and (min-width: $desktop) {
-    display: block;
     width: 313px;
 
     &:last-child {
@@ -23,8 +22,12 @@
     }
   }
 
-  &--active {
-    display: block;
+  &--hidden {
+    display: none;
+
+    @media screen and (min-width: $desktop) {
+      display: block;
+    }
   }
 }
 
@@ -42,6 +45,7 @@
 }
 
 .carousel__arrow {
+  outline: none;
   border: none;
   background-color: transparent;
   padding: 0;
