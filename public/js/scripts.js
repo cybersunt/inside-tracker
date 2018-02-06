@@ -40,7 +40,6 @@
  })();
 
  // carousel script
-
 (function () {
   var carousel = document.querySelector('.carousel');
   var slidesList = carousel.querySelector('.carousel__slides');
@@ -53,7 +52,6 @@
   var shiftSlide = 1;
   var countSlidesShow = 3;
   var position = 0;
-
 
   prevSlide.addEventListener('click', function() {
     if (document.documentElement.clientWidth > '960') {
@@ -100,11 +98,3 @@
     }
   }
 })();
-
-
-
-
-
-
-
-
