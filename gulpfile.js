@@ -136,8 +136,8 @@ gulp.task('serve', function() {
 
 // ЗАДАЧА: Автоматическая пересборка
 gulp.task('watch', function() {
-  gulp.watch('./source/js/*.js', gulp.series('scripts'));
-  gulp.watch('./source/sass/*.scss', gulp.series('styles'));
+  gulp.watch('./source/js/**/*.js', gulp.series('scripts'));
+  gulp.watch('./source/sass/**/*.scss', gulp.series('styles'));
   gulp.watch('./source/**/*.html', gulp.series('markup'));
   gulp.watch('./source/img/content/**/*.*', gulp.series('images:content'));
   gulp.watch('./source/img/decoration/**/*.*', gulp.series('images:decor'));

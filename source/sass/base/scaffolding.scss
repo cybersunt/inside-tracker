@@ -19,6 +19,7 @@ body {
   font-size: $base-ff;
   line-height: $base-lh;
   color: $dark-grey;
+  overflow-x: hidden;
 }
 
 .visually-hidden {
